@@ -43,8 +43,6 @@ echo "======== EXERCISE ========"
 
 # linhas de código bash para mostrar quais números
 # de um a dez são divisíveis por dois:
-
-for i in $(seq 1 10)
-do
+for i in $(seq 1 10); do
     [ $(($i % 2)) -eq 0 ] && echo "#$i is divisible by two"
 done
