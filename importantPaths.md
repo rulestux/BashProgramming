@@ -1,0 +1,5 @@
+
+#### /proc/cpuinfo
+> dados do cpu.
+>
+

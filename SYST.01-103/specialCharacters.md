@@ -5,9 +5,35 @@
 > do que se seguir.
 >
 
+#### __||__
+> _OR_ tem a semântica de um operador lógico e só executa um comando se o anterior
+> não tiver sido executado com sucesso.
+>
+
+#### __&__ Ampersand (e comercial)
+> executa um comando em segundo plano;
+>
+
+#### __&&__
+> _AND_ tem a semântica de um operador lógico e permite a execução de um comando
+> somente se o comando anterior for executado com sucesso.
+>
+
+#### __$__ Dollar Sign
+> usado para chamar variáveis.
+> com parêntesis __*$()*__, é uma alternativa para substituições de comando;
+> com parêntesis duploes __*$(())*__, é usado para expandir expressões
+> aritméticas.
+>
+
+#### __;__ Semicolon (ponto e vírgula)
+> equivale ao enter, quebra de linha.
+>
+
 #### __\__ Backslash (barra invertida)
 > 'escapa' o próximo caractere, neutralizando sua semântica especial, tornando-o
-> 'literal', impedindo sua 'expansão' simbólica no shell.
+> 'literal', impedindo sua 'expansão' simbólica no shell, incluso quebras de linha;
+> com aspas duplas após *echo -e* funciona como __;__, criando quebras de linha.
 >
 
 #### __"__ Double Quotes (aspas duplas)
@@ -32,12 +58,6 @@
 
 #### __<__ Less Than (menor que)
 > fornece a entrada de um aruqivo para um comando que o antecede.
->
-
-#### __&__ Ampersand (e comercial)
-> executa um comando em segundo plano;
-> __&&__ uma vez duplicado, tem a semântica de um operador e permite a execução
-> sequencial independente dos comandos que os precedem e sucedem.
 >
 
 #### __*__ Asterisk (asterisco)
