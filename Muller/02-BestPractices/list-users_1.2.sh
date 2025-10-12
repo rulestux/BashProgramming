@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
+
 #
 # list-users_1.0.sh - output users from /etc/passwd
 #
 # Site:         https://github.com/rulestux
-# Autor:        Jean Felipe
+# Author:        Jean Felipe
 # Maintenance:  Jean Felipe
 #
 #=======================================================#

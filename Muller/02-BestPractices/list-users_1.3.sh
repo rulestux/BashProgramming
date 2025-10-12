@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
+
 #
 # list-users_1.0.sh - output users from /etc/passwd
 #
 # Site:         https://github.com/rulestux
-# Autor:        Jean Felipe
+# Author:        Jean Felipe
 # Maintenance:  Jean Felipe
 #
 #=======================================================#
@@ -11,10 +12,10 @@
 # there is also the possibility to put it in capital
 # letters (uppercase) or lowercase.
 #
-# Exemple:
+# Example:
 #       $ ./list-users_1.3.sh -s -u
 #
-#       In this exemple, the script returns results in
+#       In this example, the script returns results in
 #       alphabetical order and uppercase.
 #
 #=======================================================#
