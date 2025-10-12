@@ -12,8 +12,8 @@
 # based on system data. Enter the username as parameter to      #
 # script call as following:                                     #
 #                                                               #
-#       Usage example:                                          #
-#           ./user-report.sh username                           #
+# Usage example:                                                #
+#   ./user-report.sh username                                   #
 #                                                               #
 #################################################################
 # History:                                                      #

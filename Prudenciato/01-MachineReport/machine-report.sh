@@ -11,8 +11,8 @@
 # This script reads and outputs system files in order to show   #
 # system informations.                                          #
 #                                                               #
-#          Usage example:                                       #
-#              ./machine-report.sh                              #
+# Usage example:                                                #
+#   ./machine-report.sh                                         #
 #                                                               #
 #################################################################
 # History:                                                      #

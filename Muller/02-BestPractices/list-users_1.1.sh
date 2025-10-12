@@ -1,35 +1,35 @@
 #!/usr/bin/env bash
 
-#
-# list-users_1.0.sh - output users from /etc/passwd
-#
-# Site:         https://github.com/rulestux
-# Author:        Jean Felipe
-# Maintenance:  Jean Felipe
-#
-#=======================================================#
-# This script reads and outputs users on /etc/passwd, and
-# there is also the possibility to put it in capital
-# letters (uppercase) or lowercase.
-#
-# Example:
-#       $ ./list-users_1.1.sh -s -u
-#
-#       In this example, the script returns results in
-#       alphabetical order and uppercase.
-#
-#=======================================================#
-# History:
-#   v1.0 2025-10-07, Jean Felipe:
-#       - Options added: -h, -v, -s, -r.
-#   v1.1 2025-10-07, Jean Felipe:
-#       - 'case' structure and 'basename'added.
-#
-#=======================================================#
-# Tested on:
-#   zsh v5.9
-#
-#=======================VARS============================#
+###########################################################
+# list-users_1.0.sh - output users from /etc/passwd       #
+#                                                         #
+# Site:         https://github.com/rulestux               #
+# Author:       Jean Felipe                               #
+# Maintenance:  Jean Felipe                               #
+#                                                         #
+###########################################################
+# This script reads and outputs users on /etc/passwd, and #
+# there is also the possibility to put it in capital      #
+# letters (uppercase) or lowercase.                       #
+#                                                         #
+# Example:                                                #
+#       $ ./list-users_1.1.sh -s -u                       #
+#                                                         #
+#       In this example, the script returns results in    #
+#       alphabetical order and uppercase.                 #
+#                                                         #
+###########################################################
+# History:                                                #
+#   v1.0 2025-10-07, Jean Felipe:                         #
+#       - Options added: -h, -v, -s, -r.                  #
+#   v1.1 2025-10-07, Jean Felipe:                         #
+#       - 'case' structure and 'basename'added.           #
+#                                                         #
+###########################################################
+# Tested on:                                              #
+#   zsh v5.9                                              #
+#                                                         #
+###########################################################
 
 # variável para ler os usuários combinando 'cat' e 'cut',
 # cuja utilidade é separar os dados de cada linha da lista
@@ -49,9 +49,6 @@ $(basename $0) - [OPTIONS]
     -r - Reverse order
 "
 VERSION="list-users v1.1"
-
-
-#========================EXEC============================#
 
 # implementação das opções:
 #if [ "$1" = "-h" ]; then
