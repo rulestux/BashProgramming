@@ -78,12 +78,12 @@ echo "Backup is being created..."
 # nome padrão do arquivo, com a insersão da data momento na inversão de comando:
 BACKFILE="backup_home_$(date +%Y'-'%m'-'%d'-'%H':'%M).tgz"
 
-# comando com redirecionamento final para '/dev/null', a fim de não exibir
-# a saída do processo:
-#tar zcvpf $BACKDIR/$BACKFILE --absolute-names --exclude="$BACKDIR" "$HOME"/* > /dev/null
+# execução principal com redirecionamento final para '/dev/null', a fim de não
+# exibir na tela saída do processo:
+tar zcvpf $BACKDIR/$BACKFILE --absolute-names --exclude="$BACKDIR" "$HOME"/* > /dev/null
 
 # comando de teste:
-tar zcvpf $BACKDIR/$BACKFILE --absolute-names --exclude="$HOME/.*" --exclude="$HOME/Downloads" --exclude="$BACKDIR" "$HOME"/* > /dev/null
+#tar zcvpf $BACKDIR/$BACKFILE --absolute-names --exclude="$HOME/.*" --exclude="$HOME/Downloads" --exclude="$BACKDIR" "$HOME"/* > /dev/null
 
 echo
 echo "Backup \""$BACKFILE"\" was created on \""$BACKDIR"\"."
