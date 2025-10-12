@@ -1,6 +1,6 @@
 # BashProgramming
 
-This repository contains exercises from courses in Udemy platform by Ricardo Prudenciato, Mateus Müller and Edson Oliveira.
+This repository contains exercises from courses on Udemy platform by Ricardo Prudenciato, Mateus Müller and Edson Oliveira.
 
 The courses are about Bash Programming and Linux Administration.
 

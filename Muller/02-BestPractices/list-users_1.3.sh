@@ -93,9 +93,9 @@ done
 # não poderá ser usado diretamente; então, a solução passa
 # a modificar a variável '$USERS', que receberá o retorno
 # do comando atrelado às opções fornecidas pelo usuário:
-[ $KEY_SORT -eq 1 ]      && USERS=$(echo "$USERS" | sort) # ordena alfabeticamente
-[ $KEY_SREVERSE -eq 1 ]  && USERS=$(echo "$USERS" | sort -r) # alfabético reverso
-[ $KEY_UPPERCASE -eq 1 ] && USERS=$(echo "$USERS" | tr [a-z] [A-Z]) # tudo para maiúsculas
+[[ $KEY_SORT -eq 1 ]]      && USERS=$(echo "$USERS" | sort) # ordena alfabeticamente
+[[ $KEY_SREVERSE -eq 1 ]]  && USERS=$(echo "$USERS" | sort -r) # alfabético reverso
+[[ $KEY_UPPERCASE -eq 1 ]] && USERS=$(echo "$USERS" | tr [a-z] [A-Z]) # tudo para maiúsculas
 
 # saída da variável '$USERS'depois das alterações programadas:
 echo "$USERS"

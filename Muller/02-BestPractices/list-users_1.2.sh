@@ -71,6 +71,6 @@ esac
 
 # implementação de estruturas de comparação simples para
 # retornar a opção testada no 'case', com saída booleana '1':
-[ $KEY_SORT -eq 1 ]      && echo "$USERS" | sort # ordena alfabeticamente
-[ $KEY_SREVERSE -eq 1 ]  && echo "$USERS" | sort -r # alfabético reverso
-[ $KEY_UPPERCASE -eq 1 ] && echo "$USERS" | tr [a-z] [A-Z] # tudo para maiúsculas
+[[ $KEY_SORT -eq 1 ]]      && echo "$USERS" | sort # ordena alfabeticamente
+[[ $KEY_SREVERSE -eq 1 ]]  && echo "$USERS" | sort -r # alfabético reverso
+[[ $KEY_UPPERCASE -eq 1 ]] && echo "$USERS" | tr [a-z] [A-Z] # tudo para maiúsculas
