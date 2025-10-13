@@ -13,7 +13,7 @@
 # script call as following:                                     #
 #                                                               #
 # Usage example:                                                #
-#   ./user-report.sh username                                   #
+#   ./user-report.sh <username>                                 #
 #                                                               #
 #################################################################
 # History:                                                      #
@@ -28,7 +28,8 @@
 # implementação de condicional simples com o uso do operador
 # lógico '||' 'ou', i. e., executa-se ou o que está de um lado
 # ou de outro do operador; caso o primeiro bloco seja executado
-# com sucesso, o segundo não será executado:
+# com sucesso, o segundo não será executado; note-se que '2>&1' contém
+# uma referência ao stdout '&1' para o qual se redireciona o erro '2':
 ls /home/$1 > /dev/null 2>&1 || { echo "User not found."; exit 1; }
 
 # buscar 'user' em /etc/passwd, separar dados com ':' e extrair
